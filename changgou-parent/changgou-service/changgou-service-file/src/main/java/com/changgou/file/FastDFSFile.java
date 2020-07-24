@@ -26,6 +26,8 @@ public class FastDFSFile implements Serializable {
 
     /**
      * 文件MD5摘要值
+     * 将文件的信息拼成一个字符串，将这串字符串通过MD5加密（充当电子签名），
+     * 当文件下载过程中没有问题，本地的签名和页面或者服务器中的签名应该一致，
      */
     private String md5;
 
@@ -34,7 +36,7 @@ public class FastDFSFile implements Serializable {
      */
     private String author;
 
-    public FastDFSFile(String name, byte[] content, String ext, String md5, String author){
+    public FastDFSFile(String name, byte[] content, String ext, String md5, String author) {
         this.name = name;
         this.content = content;
         this.ext = ext;
@@ -42,13 +44,13 @@ public class FastDFSFile implements Serializable {
         this.author = author;
     }
 
-    public FastDFSFile(String name, byte[] content, String ext){
+    public FastDFSFile(String name, byte[] content, String ext) {
         this.name = name;
         this.content = content;
         this.ext = ext;
     }
 
-    public FastDFSFile(){
+    public FastDFSFile() {
 
     }
 
