@@ -3,6 +3,9 @@ package com.changgou.util;
 import com.changgou.file.FastDFSFile;
 import org.csource.common.NameValuePair;
 import org.csource.fastdfs.ClientGlobal;
+import org.csource.fastdfs.StorageClient;
+import org.csource.fastdfs.TrackerClient;
+import org.csource.fastdfs.TrackerServer;
 import org.springframework.core.io.ClassPathResource;
 
 /**
@@ -41,6 +44,19 @@ public class FastDFSClient {
          * uploadFileResults[1]:
          */
         String[] uploadFileResults = null;
+        try{
+            //创建TrackerClient客户端对象
+            TrackerClient trackerClient = new TrackerClient();
+            //获取TrackerServer信息
+            TrackerServer trackerServer = trackerClient.getConnection();
+            //获取storageClient对象
+            StorageClient storageClient = new StorageClient(trackerServer, null);
+            //执行文件上传
+            uploadFileResults = storageClient.upload_file(file.getContent(), file.getExt(), meta_list);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return uploadFileResults;
 
     }
 
