@@ -1,4 +1,4 @@
-package com.changgou.service;
+package com.changgou.dao;
 
 import com.changgou.goods.pojo.Brand;
 import com.github.pagehelper.PageInfo;
