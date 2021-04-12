@@ -1,11 +1,10 @@
-package com.changgou.service.impl;
+package com.changgou.goods.service.impl;
 
 import com.changgou.dao.BrandMapper;
 import com.changgou.goods.pojo.Brand;
-import com.changgou.service.BrandService;
+import com.changgou.dao.BrandService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import entity.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;

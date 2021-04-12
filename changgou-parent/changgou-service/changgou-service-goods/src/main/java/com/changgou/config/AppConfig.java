@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
  * @Date 2020/7/14 14:46
  */
 @Configuration
-@ComponentScan(basePackages = {"com.changgou.controller","com.changgou.service"})
+@ComponentScan(basePackages = {"com.changgou.controller", "com.changgou.goods.service"})
 public class AppConfig {
 
 }
