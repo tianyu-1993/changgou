@@ -1,0 +1,9 @@
+FROM hub.c.163.com/library/java:8-jre
+
+VOLUME /tmp
+
+ADD target/changgou-eureka-1.0-SNAPSHOT.jar app.jar
+
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+
+EXPOSE 7001
