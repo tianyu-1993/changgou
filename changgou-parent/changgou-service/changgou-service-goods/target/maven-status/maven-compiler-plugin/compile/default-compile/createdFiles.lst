@@ -1,0 +1,9 @@
+com\changgou\goods\service\impl\TemplateServiceImpl.class
+com\changgou\dao\TemplateMapper.class
+com\changgou\goods\service\TemplateService.class
+com\changgou\dao\BrandMapper.class
+com\changgou\controller\BrandController.class
+com\changgou\dao\BrandService.class
+com\changgou\goods\service\impl\BrandServiceImpl.class
+com\changgou\config\AppConfig.class
+main\java\com\changgou\goods\GoodsApplication.class
