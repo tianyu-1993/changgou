@@ -25,8 +25,7 @@ public class FastdfsClientTest {
      */
     @Test
     public void upload() throws Exception {
-        ClientGlobal.init("C:\\project\\changgou\\changgou-parent" +
-                "\\changgou-service\\changgou-service-file\\src\\main\\resources\\fdfs_client.conf");
+        ClientGlobal.init("D:\\practice\\changgou\\changgou-parent\\changgou-service\\changgou-service-file\\src\\main\\resources\\fdfs_client.conf");
         //创建tracker
         TrackerClient trackerClient = new TrackerClient();
         //通过TrackerClient对象获取TrackerServer信息
@@ -35,7 +34,7 @@ public class FastdfsClientTest {
         StorageClient storageClient = new StorageClient(trackerServer, null);
 
         //执行文件上传
-        String[] jpgs = storageClient.upload_file("C:\\Users\\孙家伟\\Desktop\\新服务器开通文件\\1.jpg", "jpg", null);
+        String[] jpgs = storageClient.upload_file("D:\\1.png", "png", null);
 
         for (String jpg : jpgs) {
             System.out.println(jpg);
