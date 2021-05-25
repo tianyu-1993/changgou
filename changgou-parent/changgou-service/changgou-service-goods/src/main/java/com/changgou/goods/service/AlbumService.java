@@ -5,6 +5,11 @@ import com.github.pagehelper.PageInfo;
 
 import java.util.List;
 
+/****
+ * @Author:admin
+ * @Description:Album业务层接口
+ * @Date 2019/6/14 0:16
+ *****/
 public interface AlbumService {
 
     /***
@@ -24,8 +29,8 @@ public interface AlbumService {
      */
     PageInfo<Album> findPage(int page, int size);
 
-    /**
-     * Album多条件查询
+    /***
+     * Album多条件搜索方法
      * @param album
      * @return
      */
@@ -35,7 +40,7 @@ public interface AlbumService {
      * 删除Album
      * @param id
      */
-    void delete(long id);
+    void delete(Long id);
 
     /***
      * 修改Album数据
@@ -44,20 +49,20 @@ public interface AlbumService {
     void update(Album album);
 
     /***
-     * 添加Album数据
+     * 新增Album
      * @param album
      */
     void add(Album album);
 
-    /***
+    /**
      * 根据ID查询Album
      * @param id
      * @return
      */
-    Album findById(long id);
+     Album findById(Long id);
 
     /***
-     * 查询所有数据
+     * 查询所有Album
      * @return
      */
     List<Album> findAll();
