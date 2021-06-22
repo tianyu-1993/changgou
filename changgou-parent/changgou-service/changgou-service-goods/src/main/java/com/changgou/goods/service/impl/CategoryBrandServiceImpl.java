@@ -1,6 +1,6 @@
 package com.changgou.goods.service.impl;
 
-import com.changgou.goods.dao.CategoryBrandMapper;
+import com.changgou.dao.CategoryBrandMapper;
 import com.changgou.goods.pojo.CategoryBrand;
 import com.changgou.goods.service.CategoryBrandService;
 import com.github.pagehelper.PageHelper;

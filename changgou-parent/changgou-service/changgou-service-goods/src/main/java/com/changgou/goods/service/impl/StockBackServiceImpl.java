@@ -1,6 +1,6 @@
 package com.changgou.goods.service.impl;
 
-import com.changgou.goods.dao.StockBackMapper;
+import com.changgou.dao.StockBackMapper;
 import com.changgou.goods.pojo.StockBack;
 import com.changgou.goods.service.StockBackService;
 import com.github.pagehelper.PageHelper;

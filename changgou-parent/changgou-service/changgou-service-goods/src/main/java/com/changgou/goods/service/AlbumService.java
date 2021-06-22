@@ -36,6 +36,8 @@ public interface AlbumService {
      */
     List<Album> findList(Album album);
 
+    List<Album> findPage(Album album);
+
     /***
      * 删除Album
      * @param id

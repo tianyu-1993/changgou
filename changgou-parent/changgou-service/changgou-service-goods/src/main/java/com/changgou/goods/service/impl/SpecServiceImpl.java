@@ -1,6 +1,6 @@
 package com.changgou.goods.service.impl;
 
-import com.changgou.goods.dao.SpecMapper;
+import com.changgou.dao.SpecMapper;
 import com.changgou.goods.pojo.Spec;
 import com.changgou.goods.service.SpecService;
 import com.github.pagehelper.PageHelper;

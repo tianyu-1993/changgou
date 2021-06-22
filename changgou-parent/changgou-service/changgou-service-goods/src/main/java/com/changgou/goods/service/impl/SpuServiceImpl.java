@@ -1,6 +1,6 @@
 package com.changgou.goods.service.impl;
 
-import com.changgou.goods.dao.SpuMapper;
+import com.changgou.dao.SpuMapper;
 import com.changgou.goods.pojo.Spu;
 import com.changgou.goods.service.SpuService;
 import com.github.pagehelper.PageHelper;

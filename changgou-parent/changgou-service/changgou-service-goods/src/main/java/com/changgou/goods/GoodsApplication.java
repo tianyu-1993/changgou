@@ -1,4 +1,4 @@
-package main.java.com.changgou.goods;
+package com.changgou.goods;
 
 import com.changgou.config.AppConfig;
 import org.springframework.boot.SpringApplication;

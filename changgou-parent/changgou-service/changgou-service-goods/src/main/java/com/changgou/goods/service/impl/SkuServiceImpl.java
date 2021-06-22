@@ -1,6 +1,6 @@
 package com.changgou.goods.service.impl;
 
-import com.changgou.goods.dao.SkuMapper;
+import com.changgou.dao.SkuMapper;
 import com.changgou.goods.pojo.Sku;
 import com.changgou.goods.service.SkuService;
 import com.github.pagehelper.PageHelper;

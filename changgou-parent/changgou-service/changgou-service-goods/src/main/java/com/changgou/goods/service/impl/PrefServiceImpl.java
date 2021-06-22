@@ -1,6 +1,6 @@
 package com.changgou.goods.service.impl;
 
-import com.changgou.goods.dao.PrefMapper;
+import com.changgou.dao.PrefMapper;
 import com.changgou.goods.pojo.Pref;
 import com.changgou.goods.service.PrefService;
 import com.github.pagehelper.PageHelper;

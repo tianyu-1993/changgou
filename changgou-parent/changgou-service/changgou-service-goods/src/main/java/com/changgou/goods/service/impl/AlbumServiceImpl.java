@@ -1,6 +1,7 @@
 package com.changgou.goods.service.impl;
 
-import com.changgou.goods.dao.AlbumMapper;
+
+import com.changgou.dao.AlbumMapper;
 import com.changgou.goods.pojo.Album;
 import com.changgou.goods.service.AlbumService;
 import com.github.pagehelper.PageHelper;
@@ -55,7 +56,12 @@ public class AlbumServiceImpl implements AlbumService {
         return new PageInfo<Album>(albumMapper.selectAll());
     }
 
-    /**
+    @Override
+    public List<Album> findPage(Album album) {
+        return null;
+    }
+
+    /***
      * Album条件查询
      * @param album
      * @return

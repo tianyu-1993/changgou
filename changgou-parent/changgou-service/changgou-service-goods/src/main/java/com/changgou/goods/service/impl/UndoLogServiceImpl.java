@@ -1,6 +1,6 @@
 package com.changgou.goods.service.impl;
 
-import com.changgou.goods.dao.UndoLogMapper;
+import com.changgou.dao.UndoLogMapper;
 import com.changgou.goods.pojo.UndoLog;
 import com.changgou.goods.service.UndoLogService;
 import com.github.pagehelper.PageHelper;
