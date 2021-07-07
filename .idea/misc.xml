@@ -8,7 +8,13 @@
       <list>
         <option value="$PROJECT_DIR$/changgou-parent/pom.xml" />
         <option value="$PROJECT_DIR$/code-template/pom.xml" />
+        <option value="$PROJECT_DIR$/changgou-parent/changgou-service/changgou-service-content/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/changgou-parent/changgou-service-content-api/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">

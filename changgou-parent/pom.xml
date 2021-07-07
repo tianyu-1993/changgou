@@ -19,6 +19,9 @@
         <module>changgou-eureka</module>
         <module>changgou-common</module>
         <module>changgou-common-db</module>
+        <module>changgou-service/changgou-service-content</module>
+        <module>changgou-service-api/changgou-service-content-api</module>
+        <module>changgou-service/changgou-service-content</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
