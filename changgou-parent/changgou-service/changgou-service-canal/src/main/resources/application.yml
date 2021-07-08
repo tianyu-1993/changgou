@@ -12,7 +12,7 @@ eureka:
 feign:
   hystrix:
     enabled: true
-#hystrix配置
+#hystrix 配置
 hystrix:
   command:
     default:

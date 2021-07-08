@@ -63,4 +63,11 @@ public interface ContentService {
      * @return
      */
     List<Content> findAll();
+
+    /***
+     * 根据categoryId查询广告集合
+     * @param id
+     * @return
+     */
+    List<Content> findByCategory(Long id);
 }

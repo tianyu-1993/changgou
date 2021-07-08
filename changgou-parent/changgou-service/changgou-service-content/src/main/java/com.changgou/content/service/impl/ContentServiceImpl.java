@@ -152,4 +152,17 @@ public class ContentServiceImpl implements ContentService {
     public List<Content> findAll() {
         return contentMapper.selectAll();
     }
+
+    /***
+     * 根据分类ID查询
+     * @param id
+     * @return
+     */
+    @Override
+    public List<Content> findByCategory(Long id) {
+        Content content = new Content();
+        content.setCategoryId(id);
+        content.setStatus("1");
+        return contentMapper.select(content);
+    }
 }

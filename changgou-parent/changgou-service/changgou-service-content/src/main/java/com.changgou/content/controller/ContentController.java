@@ -123,4 +123,14 @@ public class ContentController {
         List<Content> list = contentService.findAll();
         return new Result<List<Content>>(true, StatusCode.OK,"查询成功",list) ;
     }
+
+    /***
+     * 根据categoryId查询广告集合
+     */
+    @GetMapping(value = "/list/category/{id}")
+    public Result<List<Content>> findByCategory(@PathVariable Long id){
+        //根据分类ID查询广告集合
+        List<Content> contents = contentService.findByCategory(id);
+        return new Result<List<Content>>(true,StatusCode.OK,"查询成功！",contents);
+    }
 }
