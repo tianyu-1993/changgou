@@ -5,7 +5,7 @@ eureka:
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 2 #设置心跳的时间间隔( default:30s )
     lease-expiration-duration-in-seconds: 5 #如果现在超过了5s的时间间隔( default: 90 s )
-  #hostname: 127.0.0.1
+    hostname: 127.0.0.1
   client:
     register-with-eureka: false   #是否将自己注册到eureka中
     fetch-registry: false         #是否从eureka中获取信息
