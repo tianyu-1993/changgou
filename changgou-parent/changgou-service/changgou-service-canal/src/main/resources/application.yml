@@ -3,15 +3,18 @@ server:
 spring:
   application:
     name: canal
+  redis:
+    host: 119.45.61.84
+    port: 6379
 eureka:
   client:
     service-url:
-      defaultZone: http://119.45.61.84:7001/eureka
+      defaultZone: http://127.0.0.1:7001/eureka
   instance:
     prefer-ip-address: true
 feign:
   hystrix:
-    enabled: true
+    enabled: false
 #hystrix 配置
 hystrix:
   command:
@@ -29,3 +32,6 @@ canal:
       example:
         host: 119.45.61.84
         port: 11111
+ribbon:
+  eureka:
+    enabled: true

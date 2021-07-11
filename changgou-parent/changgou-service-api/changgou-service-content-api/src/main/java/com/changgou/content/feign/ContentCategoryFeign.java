@@ -13,7 +13,7 @@ import java.util.List;
  * @Description:
  * @Date 2019/6/18 13:58
  *****/
-@FeignClient(name="content")
+@FeignClient(name="contentCategory")
 @RequestMapping("/contentCategory")
 public interface ContentCategoryFeign {
 
