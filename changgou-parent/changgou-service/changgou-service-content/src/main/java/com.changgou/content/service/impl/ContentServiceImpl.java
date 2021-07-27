@@ -1,4 +1,5 @@
 package com.changgou.content.service.impl;
+
 import com.changgou.content.dao.ContentMapper;
 import com.changgou.content.pojo.Content;
 import com.changgou.content.service.ContentService;
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import tk.mybatis.mapper.entity.Example;
+
 import java.util.List;
 /****
  * @Author:admin

@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/changgou-parent/pom.xml" />
         <option value="$PROJECT_DIR$/code-template/pom.xml" />
         <option value="$PROJECT_DIR$/changgou-parent/changgou-service/changgou-service-content/pom.xml" />
+        <option value="$PROJECT_DIR$/changgou-parent/changgou-service/pom.xml" />
+        <option value="$PROJECT_DIR$/changgou-parent/changgou-service/changgou-service-search/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

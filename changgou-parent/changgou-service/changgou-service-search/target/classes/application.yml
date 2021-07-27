@@ -7,6 +7,8 @@ spring:
     elasticsearch:
       cluster-name: my-application
       cluster-nodes: 119.45.61.84:9300
+  main: # 设置 为true ,即 允许 同名
+    allow-bean-definition-overriding: true
 eureka:
   client:
     service-url:
@@ -18,7 +20,7 @@ feign:
     enabled: true
 #超时配置
 ribbon:
-  ReadTimeout: 300000
+  ReadTimeout: 3000000
 
 hystrix:
   command:
@@ -26,4 +28,4 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 10000
+            timeoutInMilliseconds: 10000000

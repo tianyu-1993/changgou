@@ -19,11 +19,14 @@
         <module>changgou-eureka</module>
         <module>changgou-common</module>
         <module>changgou-common-db</module>
-        <module>changgou-service/changgou-service-content</module>
-        <module>changgou-service-api/changgou-service-content-api</module>
-        <module>changgou-service/changgou-service-content</module>
-        <module>changgou-service-api/changgou-service-search-api</module>
         <module>changgou-service/changgou-service-search</module>
+        <module>changgou-service/changgou-service-search</module>
+        <!--        <module>changgou-service-api/changgou-service-goods-api</module>-->
+<!--        <module>changgou-service/changgou-service-goods</module>-->
+<!--        <module>changgou-service-api/changgou-service-content-api</module>-->
+<!--        <module>changgou-service/changgou-service-content</module>-->
+<!--        <module>changgou-service-api/changgou-service-search-api</module>-->
+<!--        <module>changgou-service/changgou-service-search</module>-->
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

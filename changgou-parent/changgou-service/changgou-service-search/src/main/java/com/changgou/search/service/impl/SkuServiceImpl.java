@@ -8,11 +8,12 @@ import com.changgou.search.service.SkuService;
 import com.changou.search.pojo.SkuInfo;
 import entity.Result;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+@Service
 public class SkuServiceImpl implements SkuService {
 
     @Autowired
@@ -25,11 +26,11 @@ public class SkuServiceImpl implements SkuService {
      * 导入sku数据到es
      */
     @Override
-    public void importSku() {
+    public void importSku(){
         //调用changgou-service-goods微服务
         Result<List<Sku>> skuListResult = skuFeign.findByStatus("1");
         //将数据转成search.Sku
-        List<SkuInfo> skuInfos = JSON.parseArray(JSON.toJSONString(skuListResult.getData()), SkuInfo.class);
+        List<SkuInfo> skuInfos=  JSON.parseArray(JSON.toJSONString(skuListResult.getData()),SkuInfo.class);
         for(SkuInfo skuInfo:skuInfos){
             Map<String, Object> specMap= JSON.parseObject(skuInfo.getSpec()) ;
             skuInfo.setSpecMap(specMap);

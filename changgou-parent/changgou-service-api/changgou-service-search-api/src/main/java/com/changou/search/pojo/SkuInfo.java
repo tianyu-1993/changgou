@@ -7,12 +7,13 @@ import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
 
 import javax.persistence.Id;
+import java.io.Serializable;
 import java.util.Date;
 import java.util.Map;
 
-@Document(indexName = "shuinfo", type = "docs")
+@Document(indexName = "skuinfo", type = "docs")
 @Data
-public class SkuInfo {
+public class SkuInfo implements Serializable {
 
     /**
      * 商品ID，同时也是商品编号

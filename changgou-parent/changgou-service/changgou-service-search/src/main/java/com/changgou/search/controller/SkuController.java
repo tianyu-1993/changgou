@@ -1,6 +1,5 @@
 package com.changgou.search.controller;
 
-
 import com.changgou.search.service.SkuService;
 import entity.Result;
 import entity.StatusCode;
